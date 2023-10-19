@@ -28,6 +28,48 @@ public class Jugador {
         return efectividad;
     }
 
+    // Getters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getPaís() {
+        return país;
+    }
+
+    public int getErrores() {
+        return errores;
+    }
+
+    public int getAces() {
+        return aces;
+    }
+
+    public int getServicios() {
+        return servicios;
+    }
+
+    // Setters (si es necesario)
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setPaís(String país) {
+        this.país = país;
+    }
+
+    public void setErrores(int errores) {
+        this.errores = errores;
+    }
+
+    public void setAces(int aces) {
+        this.aces = aces;
+    }
+
+    public void setServicios(int servicios) {
+        this.servicios = servicios;
+    }
+
     public static ArrayList<Jugador> cargarJugadoresDesdeCSV(String archivoCSV) {
         ArrayList<Jugador> jugadores = new ArrayList<>();
 
